@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PreviousIdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/previousid_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Previous ID's"
+        app:titleTextColor="@color/black"
+        android:paddingHorizontal="5dp"
+        android:layout_alignParentTop="true"
+        android:background="#5EC5F4"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previousid_toolbar"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="5dp"
+        android:background="@color/white"
+        />
+
+</RelativeLayout>

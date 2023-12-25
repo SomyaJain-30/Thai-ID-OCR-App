@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hii"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the App!"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/hii"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/upload_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload an image for OCR"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:background="#CAC9C9"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_below="@+id/upload_text"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/extract_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extract Text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_below="@+id/upload_button"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

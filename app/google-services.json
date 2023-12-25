@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812369177674",
+    "project_id": "thai-id-ocr-dda39",
+    "storage_bucket": "thai-id-ocr-dda39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812369177674:android:5bb75b009d487d103b8ab3",
+        "android_client_info": {
+          "package_name": "com.example.thaiidocr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUlahCWgLjNVLfICRZ8TToGGdlRs6EtGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
