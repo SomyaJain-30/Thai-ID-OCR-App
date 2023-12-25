@@ -40,6 +40,7 @@ public class ExtractedTextActivity extends AppCompatActivity {
         data.put("doi", doi);
         data.put("doe", doe);
         data.put("identification", identification);
+
         firestore.collection("Thai ID's").document(identification).set(data).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {

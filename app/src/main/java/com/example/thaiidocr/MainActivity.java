@@ -119,6 +119,11 @@ public class MainActivity extends AppCompatActivity {
             String doe = findInfo(doeMatcher);
             String identification = findInfo(identificationMatcher);
 
+            if(firstName == "Not Found" || lastName == "Not Found" || dob == "Not Found" || doi == "Not Found" || doe == "Not Found" || identification== "Not Found"){
+                Toast.makeText(this, "Please Upload a clear image", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             //String temp = firstName + " " + lastName + " " + dob + " " + doi + " " + doe + " " + identification;
             Intent i = new Intent(MainActivity.this, ExtractedTextActivity.class);
             i.putExtra("firstName",firstName);
