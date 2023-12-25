@@ -30,7 +30,7 @@ import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView image;
-    private Button uploadButton, extractButton;
+    private Button uploadButton, extractButton, previousidButton;
     private static final int PICK_IMAGE_REQUEST = 1;
 
     @SuppressLint("MissingInflatedId")
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         image = findViewById(R.id.imageview);
         uploadButton = findViewById(R.id.upload_button);
         extractButton = findViewById(R.id.extract_text);
+        previousidButton = findViewById(R.id.previousid_button);
 
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
                 extractTextFromImage();
             }
         });
+        previousidButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, PreviousIdActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     private void extractTextFromImage() {

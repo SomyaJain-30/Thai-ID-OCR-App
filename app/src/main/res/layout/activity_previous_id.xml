@@ -15,15 +15,28 @@
         app:titleTextColor="@color/black"
         android:paddingHorizontal="5dp"
         android:layout_alignParentTop="true"
-        android:background="#5EC5F4"/>
+        android:background="#D78CF8"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/previousid_toolbar"
         android:layout_marginTop="10dp"
         android:paddingHorizontal="5dp"
         android:background="@color/white"
+        android:visibility="gone"
         />
+
+    <TextView
+        android:id="@+id/no_id_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No ID's Available"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/previousid_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
 
 </RelativeLayout>
